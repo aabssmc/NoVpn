@@ -1,0 +1,15 @@
+name: NoVpn
+version: '${version}'
+main: cc.aabss.novpn.NoVpn
+api-version: '1.21'
+prefix: NoVpn
+authors: [aabss]
+description: Only anti-vpn plugin with no limits for free.
+website: https://aabss.cc
+commands:
+  novpn:
+    permission: novpn.command
+    description: Main command for reloading.
+permissions:
+  novpn.sendVpnMessage:
+    description: Whether the permissible should see messages if a player joins with a vpn

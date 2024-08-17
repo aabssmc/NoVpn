@@ -1,0 +1,9 @@
+# The commands executed when a player joins with a vpn.
+# use %player% and %ip%
+commands:
+  # commands executed from the player
+  player:
+    # - "warp vpnUser"
+  # commands executed from the console
+  console:
+     - "kick %player% You are using a VPN!"
