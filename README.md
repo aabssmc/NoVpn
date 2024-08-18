@@ -1,2 +1,2 @@
 # NoVpn
-Only anti-vpn plugin with no limits for free.
+A free light-weight anti-vpn plugin for velocity, bungeecord and bukkit.

@@ -7,3 +7,10 @@ commands:
   # commands executed from the console
   console:
      - "kick %player% You are using a VPN!"
+
+# Whether the user should be kicked when they join with a VPN.
+should-kick: true
+
+# Who should be sending the messages?
+# valid entries: PROXY, BUKKIT, BOTH
+message-sender: "BOTH"

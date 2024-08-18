@@ -1,10 +1,10 @@
 name: NoVpn
 version: '${version}'
-main: cc.aabss.novpn.NoVpn
-api-version: '1.21'
+main: cc.aabss.novpn.NoVpnBukkit
+api-version: '1.13'
 prefix: NoVpn
 authors: [aabss]
-description: Only anti-vpn plugin with no limits for free.
+description: A free light-weight anti-vpn plugin for velocity, bungeecord and bukkit.
 website: https://aabss.cc
 commands:
   novpn:

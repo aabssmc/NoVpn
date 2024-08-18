@@ -1,19 +1,19 @@
-package cc.aabss.novpn;
+package cc.aabss.novpn.bukkit;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 import javax.annotation.Nonnull;
-import java.net.InetAddress;
+import java.net.InetSocketAddress;
 
 @SuppressWarnings("unused")
 public class PlayerVpnJoinEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
     private final Player player;
-    private final InetAddress ipAddress;
+    private final InetSocketAddress ipAddress;
 
-    public PlayerVpnJoinEvent(@Nonnull final Player player, @Nonnull final InetAddress ipAddress) {
+    public PlayerVpnJoinEvent(@Nonnull final Player player, @Nonnull final InetSocketAddress ipAddress) {
         this.player = player;
         this.ipAddress = ipAddress;
     }
@@ -24,7 +24,7 @@ public class PlayerVpnJoinEvent extends Event {
     }
 
     @Nonnull
-    public InetAddress getAddress() {
+    public InetSocketAddress getAddress() {
         return ipAddress;
     }
 

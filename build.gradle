@@ -8,10 +8,20 @@ version = '1.0.0'
 repositories {
     mavenCentral()
     maven {url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"}
+    maven {url = "https://repo.papermc.io/repository/maven-public/"}
+    maven {url = "https://oss.sonatype.org/content/repositories/snapshots"}
 }
 
 dependencies {
+    // bukkit
     compileOnly "org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT"
+
+    // velocity
+    compileOnly 'com.velocitypowered:velocity-api:3.3.0-SNAPSHOT'
+    annotationProcessor 'com.velocitypowered:velocity-api:3.3.0-SNAPSHOT'
+
+    //bungeecord
+    compileOnly 'net.md-5:bungeecord-api:1.21-R0.1-SNAPSHOT'
 }
 
 java {
@@ -28,6 +38,12 @@ processResources {
     inputs.properties props
     filteringCharset "UTF-8"
     filesMatching("plugin.yml") {
+        expand props
+    }
+    filesMatching("velocity-plugin.json") {
+        expand props
+    }
+    filesMatching("bungee.json") {
         expand props
     }
     from ("lang") {

@@ -1,7 +1,7 @@
 package cc.aabss.novpn.vpn;
 
 public class IntervalTree {
-    private IntervalNode root;
+    public IntervalNode root;
 
     public void insert(Interval interval) {
         if (root == null) {
