@@ -5,5 +5,5 @@
   "authors": ["aabss"],
   "main": "cc.aabss.novpn.NoVpnVelocity",
   "url": "https://aabss.cc",
-  "description": "A free light-weight anti-vpn plugin for velocity, bungeecord and bukkit."
+  "description": "A free, light-weight anti-vpn plugin for velocity, bungeecord and bukkit."
 }

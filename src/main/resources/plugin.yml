@@ -4,7 +4,7 @@ main: cc.aabss.novpn.NoVpnBukkit
 api-version: '1.13'
 prefix: NoVpn
 authors: [aabss]
-description: A free light-weight anti-vpn plugin for velocity, bungeecord and bukkit.
+description: A free, light-weight anti-vpn plugin for velocity, bungeecord and bukkit.
 website: https://aabss.cc
 commands:
   novpn:
